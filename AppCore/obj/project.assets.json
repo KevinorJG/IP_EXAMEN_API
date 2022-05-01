@@ -148,7 +148,7 @@
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
-      "Domain/1.0.0": {
+      "OpenWeather.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -157,10 +157,10 @@
           "RestSharp": "107.3.0"
         },
         "compile": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/OpenWeather.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/OpenWeather.Domain.dll": {}
         }
       }
     }
@@ -386,16 +386,16 @@
         "version.txt"
       ]
     },
-    "Domain/1.0.0": {
+    "OpenWeather.Domain/1.0.0": {
       "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
+      "path": "../Domain/OpenWeather.Domain.csproj",
+      "msbuildProject": "../Domain/OpenWeather.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Domain >= 1.0.0",
       "Newtonsoft.Json >= 13.0.1",
+      "OpenWeather.Domain >= 1.0.0",
       "RestClient >= 3.747.13996",
       "RestSharp >= 107.3.0"
     ]
@@ -406,9 +406,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\AppCore.csproj",
-      "projectName": "AppCore",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\AppCore.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\OpenWeather.AppCore.csproj",
+      "projectName": "OpenWeather.AppCore",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\OpenWeather.AppCore.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\obj\\",
       "projectStyle": "PackageReference",
@@ -427,8 +427,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Domain\\Domain.csproj"
+            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Domain\\OpenWeather.Domain.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Domain\\OpenWeather.Domain.csproj"
             }
           }
         }

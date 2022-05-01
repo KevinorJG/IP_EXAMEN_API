@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nJ8ryAENdbwosiHz7BPi2gZz1wEwQhd4iQ5eOBL0t0f25YauDHxqhMfqVJgrVP269VhKvKBcZ8mtjhwjITVNpQ==",
+  "dgSpecHash": "gzVpZselfma6iEp0KLrANBJEF9KhC32eGDSP2FGOh7uCxXMbD52til8NzqFOcspPP/F46h1Io4f/9p6nTH1FRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppAPI\\AppAPI.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppAPI\\OpenWeather.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -411,23 +411,23 @@
           }
         }
       },
-      "AppCore/1.0.0": {
+      "OpenWeather.AppCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Domain": "1.0.0",
           "Newtonsoft.Json": "13.0.1",
+          "OpenWeather.Domain": "1.0.0",
           "RestClient": "3.747.13996",
           "RestSharp": "107.3.0"
         },
         "compile": {
-          "bin/placeholder/AppCore.dll": {}
+          "bin/placeholder/OpenWeather.AppCore.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AppCore.dll": {}
+          "bin/placeholder/OpenWeather.AppCore.dll": {}
         }
       },
-      "Common/1.0.0": {
+      "OpenWeather.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -436,13 +436,13 @@
           "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "compile": {
-          "bin/placeholder/Common.dll": {}
+          "bin/placeholder/OpenWeather.Common.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Common.dll": {}
+          "bin/placeholder/OpenWeather.Common.dll": {}
         }
       },
-      "Domain/1.0.0": {
+      "OpenWeather.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -451,27 +451,27 @@
           "RestSharp": "107.3.0"
         },
         "compile": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/OpenWeather.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/OpenWeather.Domain.dll": {}
         }
       },
-      "Infraestructure/1.0.0": {
+      "OpenWeather.Infraestructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Common": "1.0.0",
-          "Domain": "1.0.0",
           "Newtonsoft.Json": "13.0.1",
+          "OpenWeather.Common": "1.0.0",
+          "OpenWeather.Domain": "1.0.0",
           "RestClient": "3.747.13996",
           "RestSharp": "107.3.0"
         },
         "compile": {
-          "bin/placeholder/Infraestructure.dll": {}
+          "bin/placeholder/OpenWeather.Infraestructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Infraestructure.dll": {}
+          "bin/placeholder/OpenWeather.Infraestructure.dll": {}
         }
       }
     }
@@ -1259,33 +1259,33 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "AppCore/1.0.0": {
+    "OpenWeather.AppCore/1.0.0": {
       "type": "project",
-      "path": "../AppCore/AppCore.csproj",
-      "msbuildProject": "../AppCore/AppCore.csproj"
+      "path": "../AppCore/OpenWeather.AppCore.csproj",
+      "msbuildProject": "../AppCore/OpenWeather.AppCore.csproj"
     },
-    "Common/1.0.0": {
+    "OpenWeather.Common/1.0.0": {
       "type": "project",
-      "path": "../Common/Common.csproj",
-      "msbuildProject": "../Common/Common.csproj"
+      "path": "../Common/OpenWeather.Common.csproj",
+      "msbuildProject": "../Common/OpenWeather.Common.csproj"
     },
-    "Domain/1.0.0": {
+    "OpenWeather.Domain/1.0.0": {
       "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
+      "path": "../Domain/OpenWeather.Domain.csproj",
+      "msbuildProject": "../Domain/OpenWeather.Domain.csproj"
     },
-    "Infraestructure/1.0.0": {
+    "OpenWeather.Infraestructure/1.0.0": {
       "type": "project",
-      "path": "../Infraestructure/Infraestructure.csproj",
-      "msbuildProject": "../Infraestructure/Infraestructure.csproj"
+      "path": "../Infraestructure/OpenWeather.Infraestructure.csproj",
+      "msbuildProject": "../Infraestructure/OpenWeather.Infraestructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "AppCore >= 1.0.0",
       "Autofac >= 6.3.0",
-      "Infraestructure >= 1.0.0",
       "Newtonsoft.Json >= 13.0.1",
+      "OpenWeather.AppCore >= 1.0.0",
+      "OpenWeather.Infraestructure >= 1.0.0",
       "RestClient >= 3.747.13996",
       "RestSharp >= 107.3.0"
     ]
@@ -1296,9 +1296,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppAPI\\AppAPI.csproj",
-      "projectName": "AppAPI",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppAPI\\AppAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppAPI\\OpenWeather.Presentation.csproj",
+      "projectName": "OpenWeather.Presentation",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppAPI\\OpenWeather.Presentation.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppAPI\\obj\\",
       "projectStyle": "PackageReference",
@@ -1317,11 +1317,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\AppCore.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\AppCore.csproj"
+            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\OpenWeather.AppCore.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\OpenWeather.AppCore.csproj"
             },
-            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\Infraestructure.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\Infraestructure.csproj"
+            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\OpenWeather.Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\OpenWeather.Infraestructure.csproj"
             }
           }
         }

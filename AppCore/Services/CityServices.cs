@@ -21,21 +21,14 @@ namespace AppCore.Services
             return model.GetIcon();
         }
 
-        public Task<string> GetIconLocal()
+        public Task<City.Root> GetWather()
         {
-            return model.GetIconLocal();
+            return model.GetWather();
         }
 
-        public Task<City.Root> GetLocal_Location()
+        public string Recibir(string city)
         {
-            return model.GetLocal_Location();
+           return model.Recibir(city);  
         }
-
-        public Task<City.Root> GetWather(string city)
-        {
-            return model.GetWather(city);
-        }
-
-       
     }
 }

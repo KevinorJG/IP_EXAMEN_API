@@ -390,7 +390,7 @@
           }
         }
       },
-      "Common/1.0.0": {
+      "OpenWeather.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -399,13 +399,13 @@
           "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "compile": {
-          "bin/placeholder/Common.dll": {}
+          "bin/placeholder/OpenWeather.Common.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Common.dll": {}
+          "bin/placeholder/OpenWeather.Common.dll": {}
         }
       },
-      "Domain/1.0.0": {
+      "OpenWeather.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -414,10 +414,10 @@
           "RestSharp": "107.3.0"
         },
         "compile": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/OpenWeather.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/OpenWeather.Domain.dll": {}
         }
       }
     }
@@ -1158,22 +1158,22 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Common/1.0.0": {
+    "OpenWeather.Common/1.0.0": {
       "type": "project",
-      "path": "../Common/Common.csproj",
-      "msbuildProject": "../Common/Common.csproj"
+      "path": "../Common/OpenWeather.Common.csproj",
+      "msbuildProject": "../Common/OpenWeather.Common.csproj"
     },
-    "Domain/1.0.0": {
+    "OpenWeather.Domain/1.0.0": {
       "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
+      "path": "../Domain/OpenWeather.Domain.csproj",
+      "msbuildProject": "../Domain/OpenWeather.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Common >= 1.0.0",
-      "Domain >= 1.0.0",
       "Newtonsoft.Json >= 13.0.1",
+      "OpenWeather.Common >= 1.0.0",
+      "OpenWeather.Domain >= 1.0.0",
       "RestClient >= 3.747.13996",
       "RestSharp >= 107.3.0"
     ]
@@ -1184,9 +1184,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\Infraestructure.csproj",
-      "projectName": "Infraestructure",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\Infraestructure.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\OpenWeather.Infraestructure.csproj",
+      "projectName": "OpenWeather.Infraestructure",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\OpenWeather.Infraestructure.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\obj\\",
       "projectStyle": "PackageReference",
@@ -1205,11 +1205,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Common\\Common.csproj"
+            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Common\\OpenWeather.Common.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Common\\OpenWeather.Common.csproj"
             },
-            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Domain\\Domain.csproj"
+            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Domain\\OpenWeather.Domain.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Domain\\OpenWeather.Domain.csproj"
             }
           }
         }

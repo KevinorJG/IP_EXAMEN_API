@@ -18,9 +18,9 @@ namespace AppCore.Services
             this.model = model;
         }
 
-        public Weather.Root GetForecast(string city)
+        public Task<Weather.Root> GetForecast()
         {
-            return model.GetForecast(city);
+            return model.GetForecast();
         }
     }
 }

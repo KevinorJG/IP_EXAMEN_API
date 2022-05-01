@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{90DBD21D-E84A-4C7C-808E-88DB2DE7A9FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeather.Domain", "Domain\OpenWeather.Domain.csproj", "{90DBD21D-E84A-4C7C-808E-88DB2DE7A9FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppAPI", "AppAPI\AppAPI.csproj", "{9A1A5E48-004B-4D54-A2EA-3AAA23067067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeather.Presentation", "AppAPI\OpenWeather.Presentation.csproj", "{9A1A5E48-004B-4D54-A2EA-3AAA23067067}"
 	ProjectSection(ProjectDependencies) = postProject
 		{90DBD21D-E84A-4C7C-808E-88DB2DE7A9FF} = {90DBD21D-E84A-4C7C-808E-88DB2DE7A9FF}
 		{451B60BF-4EF0-4748-A20F-FC6D1531C3A0} = {451B60BF-4EF0-4748-A20F-FC6D1531C3A0}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppCore", "AppCore\AppCore.csproj", "{D3CF9822-E3D3-4590-A876-D9E326D02557}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeather.AppCore", "AppCore\OpenWeather.AppCore.csproj", "{D3CF9822-E3D3-4590-A876-D9E326D02557}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infraestructure", "Infraestructure\Infraestructure.csproj", "{8E20773A-868F-436D-A338-D797ADADC559}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeather.Infraestructure", "Infraestructure\OpenWeather.Infraestructure.csproj", "{8E20773A-868F-436D-A338-D797ADADC559}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{451B60BF-4EF0-4748-A20F-FC6D1531C3A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeather.Common", "Common\OpenWeather.Common.csproj", "{451B60BF-4EF0-4748-A20F-FC6D1531C3A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

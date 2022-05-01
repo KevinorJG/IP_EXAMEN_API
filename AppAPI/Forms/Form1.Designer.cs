@@ -45,10 +45,10 @@
             this.labelCiudad = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelLatitud = new System.Windows.Forms.Label();
+            this.labelLongitud = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.labelDt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -219,27 +219,27 @@
             this.label6.TabIndex = 22;
             this.label6.Text = "Longitud:";
             // 
-            // label7
+            // labelLatitud
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(315, 145);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 15);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "N/A";
+            this.labelLatitud.AutoSize = true;
+            this.labelLatitud.BackColor = System.Drawing.Color.Transparent;
+            this.labelLatitud.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.labelLatitud.Location = new System.Drawing.Point(315, 145);
+            this.labelLatitud.Name = "labelLatitud";
+            this.labelLatitud.Size = new System.Drawing.Size(29, 15);
+            this.labelLatitud.TabIndex = 23;
+            this.labelLatitud.Text = "N/A";
             // 
-            // label9
+            // labelLongitud
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label9.Location = new System.Drawing.Point(528, 145);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 15);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "N/A";
+            this.labelLongitud.AutoSize = true;
+            this.labelLongitud.BackColor = System.Drawing.Color.Transparent;
+            this.labelLongitud.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.labelLongitud.Location = new System.Drawing.Point(528, 145);
+            this.labelLongitud.Name = "labelLongitud";
+            this.labelLongitud.Size = new System.Drawing.Size(29, 15);
+            this.labelLongitud.TabIndex = 24;
+            this.labelLongitud.Text = "N/A";
             // 
             // label10
             // 
@@ -252,28 +252,28 @@
             this.label10.TabIndex = 25;
             this.label10.Text = "dt:";
             // 
-            // label11
+            // labelDt
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label11.Location = new System.Drawing.Point(314, 181);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 15);
-            this.label11.TabIndex = 26;
-            this.label11.Text = "N/A";
+            this.labelDt.AutoSize = true;
+            this.labelDt.BackColor = System.Drawing.Color.Transparent;
+            this.labelDt.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.labelDt.Location = new System.Drawing.Point(314, 181);
+            this.labelDt.Name = "labelDt";
+            this.labelDt.Size = new System.Drawing.Size(29, 15);
+            this.labelDt.TabIndex = 26;
+            this.labelDt.Text = "N/A";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AppAPI.Properties.Resources.Fondo;
+            this.BackgroundImage = global::OpenWeather.Presentation.Properties.Resources.Fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(657, 261);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.labelDt);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelLongitud);
+            this.Controls.Add(this.labelLatitud);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.labelCiudad);
@@ -291,7 +291,7 @@
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = global::AppAPI.Properties.Resources.API;
+            this.Icon = global::OpenWeather.Presentation.Properties.Resources.API;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -319,11 +319,11 @@
         private System.Windows.Forms.TextBox CityTexBox;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label labelCiudad;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelLongitud;
+        private System.Windows.Forms.Label labelLatitud;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label labelDt;
         private System.Windows.Forms.Label label10;
     }
 }

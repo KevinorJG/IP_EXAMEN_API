@@ -23,8 +23,7 @@ namespace AppAPI
             var builder = new ContainerBuilder();
             builder.RegisterType<ApiGetRepository>().As<IModel<City.Root>>();
             builder.RegisterType<CityServices>().As<IServices<City.Root>>();
-
-           
+        
             builder.RegisterType<ApiGetRepository>().As<IWeatherModel<Weather.Root>>();
             builder.RegisterType<WeatherServices>().As<IWeatherServices<Weather.Root>>();
            

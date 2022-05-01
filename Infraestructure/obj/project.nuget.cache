@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m5Gvb+78dU9iSwyUwYSgkvHWjMQYr6WgcGl8whUsXdShfGoTPqeY6A/yA9aC+JMVxeuh8VrBkW1k5tXUNPhgVQ==",
+  "dgSpecHash": "PO3nadyKHBBaSQMB79KgqoBXr6OsGpiLdTg1HSrbvN7V5JE8AXRzEKPoW3T4MFQIg3jyWbM1VSzi4ZkLWSsMog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\Infraestructure.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Infraestructure\\OpenWeather.Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

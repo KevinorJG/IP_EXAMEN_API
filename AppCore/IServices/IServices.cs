@@ -5,14 +5,8 @@ namespace AppCore.IServices
 {
     public interface IServices<T>
     {
-        Task<T> GetWather(string city);
+        Task<T> GetWather();
         Task<string> GetIcon();
-
-
-        public Task<T> GetLocal_Location();
-
-        public Task<string> GetIconLocal();
-
-       
+        public string Recibir(string city);
     }
 }

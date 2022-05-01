@@ -857,9 +857,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Common\\Common.csproj",
-      "projectName": "Common",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Common\\OpenWeather.Common.csproj",
+      "projectName": "OpenWeather.Common",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Common\\OpenWeather.Common.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\Common\\obj\\",
       "projectStyle": "PackageReference",

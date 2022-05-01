@@ -9,6 +9,7 @@ namespace AppCore.IServices
     public interface IWeatherServices<T>
     {
 
-        T GetForecast(string city);
+        Task<T> GetForecast();
+        
     }
 }

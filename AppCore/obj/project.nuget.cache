@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A9nq4IXtxlxeEp8IHx1Lm2nUtoWNfQOEmIAt2j2bL+6I5zh5pt5UmHLlnbxoAjzYWZfbL+KXpzhMI0WvmX+xeQ==",
+  "dgSpecHash": "C9FI4nmcl7IHmNqp7QTbu0+m9onALzc6s7d51px6SYjOosbUHSU6lnLpxfP7RyqcxcucsAX+9ItrxGm+7b4uNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\AppCore.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\API_Tarea\\AppCore\\OpenWeather.AppCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.4\\microsoft.extensions.configuration.3.1.4.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.4\\microsoft.extensions.configuration.abstractions.3.1.4.nupkg.sha512",

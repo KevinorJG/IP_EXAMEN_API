@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,16 +17,20 @@ namespace Infraestructure.Repository
     {
         protected string Url = String.Empty;
         protected string city = String.Empty;
-        protected string lon = String.Empty;
         protected string lat = String.Empty;
+        protected string lon = String.Empty;
         protected string dt = String.Empty;
+        protected string icon = String.Empty;
+        public static List<City.Root> cities = new List<City.Root>();
 
         public async Task<string> GetIcon()
         {
+            //Expresion que obtiene la id del Icono de dicho pais
+            cities.ForEach(x => icon =  x.weather[0].icon); 
             try
             {
-
-                return await Task.FromResult($"{AppSettings.ApiIcons}{GetWather(city).Result.weather[0].icon}{".png"}");
+                
+                return await Task.FromResult($"{AppSettings.ApiIcons}{icon}{".png"}");
             }
             catch (IOException)
             {
@@ -34,16 +39,16 @@ namespace Infraestructure.Repository
             }
         }
 
-        public async Task<City.Root> GetWather(string city)
+        public async Task<City.Root> GetWather()
         {
             try
             {
-                this.city = city;
                 using (WebClient web = new WebClient())
                 {
                     Url = string.Format($"{AppSettings.ApiUrl}{city}&appid={ AppSettings.Token}&lang=es");
                     var Json = web.DownloadString(Url);
                     City.Root info = JsonConvert.DeserializeObject<City.Root>(Json);
+                    cities.Add(info);
                     return await Task.FromResult(info);
                 }
             }
@@ -54,33 +59,21 @@ namespace Infraestructure.Repository
             }
         }
 
-
-        public async Task<City.Root> GetLocal_Location()
+        public async Task<Weather.Root> GetForecast()
         {
-            RegionInfo Country = new RegionInfo("NI");
-            return await GetWather(Country.DisplayName);
-        }
-        public async Task<string> GetIconLocal()
-        {
-            return await GetIcon();
-        }
+          //Expresiones que obtienen las coordenadas y  DateTime de dicho pais
+            cities.ForEach(x => lat = x.coord.lat);
+            cities.ForEach(x => lon = x.coord.lon);
+            cities.ForEach(x => dt = x.dt);
 
-
-        public Weather.Root GetForecast(string city)
-        {
-           
-            lat = GetWather(city).Result.coord.lat;
-            lon = GetWather(city).Result.coord.lon;
-            dt = GetWather(city).Result.dt;
             try
-            {
-                
+            {    
                 using (WebClient web = new WebClient())
                 {
                     Url = string.Format($"{AppSettings.ApiUrlOneCall}lat={lat}&lon={lon}&dt={dt}&appid={ AppSettings.Token}");
-                    var Json = web.DownloadString(Url);
-                    Weather.Root info = JsonConvert.DeserializeObject<Weather.Root>(Json);
-                    return info;
+                    var Json = web.DownloadString(Url);                
+                    var info = JsonConvert.DeserializeObject<Weather.Root>(Json);
+                    return await Task.FromResult(info);
                 }
             }
             catch (IOException)
@@ -90,6 +83,10 @@ namespace Infraestructure.Repository
             }
         }
 
+        public string Recibir(string city)
+        {          
+            return this.city = city;
+        }
        
     }
 }
